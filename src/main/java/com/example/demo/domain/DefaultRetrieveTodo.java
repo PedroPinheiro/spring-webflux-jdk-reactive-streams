@@ -18,7 +18,8 @@ public class DefaultRetrieveTodo implements RetrieveTodo {
     @Override
     public Flow.Publisher<ResponseModel> execute(final int id) {
 
-        return MapProcessor.from(gateway.find(id))
+        return MapProcessor
+                .from(gateway.find(id))
                 .map(mapToResponse);
 
     }

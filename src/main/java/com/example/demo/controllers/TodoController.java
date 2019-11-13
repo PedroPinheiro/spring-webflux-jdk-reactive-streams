@@ -19,8 +19,9 @@ public class TodoController {
     @GetMapping(value = "/todos/{id}")
     public Publisher<Output> todo(@PathVariable int id) {
 
-        return MapProcessor.from(retrieveTodo.execute(id))
-            .map(mapToOutput);
+        return MapProcessor
+                .from(retrieveTodo.execute(id))
+                .map(mapToOutput);
     }
 
     @Data
@@ -36,10 +37,10 @@ public class TodoController {
 
     private Function<RetrieveTodo.ResponseModel, Output> mapToOutput = (responseModel) ->
             Output.builder()
-                .userId(responseModel.getUserId())
-                .id(responseModel.getId())
-                .title(responseModel.getTitle())
-                .completed(responseModel.getCompleted())
-                .build();
+                    .userId(responseModel.getUserId())
+                    .id(responseModel.getId())
+                    .title(responseModel.getTitle())
+                    .completed(responseModel.getCompleted())
+                    .build();
 
 }
