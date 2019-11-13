@@ -1,7 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.domain.RetrieveTodo;
-import com.example.demo.domain.gateways.MapProcessor;
+import com.example.demo.MapProcessor;
 import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

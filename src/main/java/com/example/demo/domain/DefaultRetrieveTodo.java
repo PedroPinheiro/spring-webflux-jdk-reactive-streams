@@ -2,7 +2,7 @@ package com.example.demo.domain;
 
 import com.example.demo.domain.entities.Todo;
 import com.example.demo.domain.gateways.FindTodoByIdGateway;
-import com.example.demo.domain.gateways.MapProcessor;
+import com.example.demo.MapProcessor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

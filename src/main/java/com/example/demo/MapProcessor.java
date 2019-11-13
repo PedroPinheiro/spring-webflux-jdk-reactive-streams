@@ -1,4 +1,4 @@
-package com.example.demo.domain.gateways;
+package com.example.demo;
 
 
 import java.util.concurrent.Flow;
